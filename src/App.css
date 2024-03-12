@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  background-image: url(./imgs/bg.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top center;
+  height: 200vh;
+}
