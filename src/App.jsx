@@ -1,6 +1,31 @@
+import { useState, useEffect } from 'react';
 import './App.css';
+import axios from 'axios';
 
 function App() {
+	const [vacancy, setVacancy] = useState([]);
+
+	async function getVacancyList() {
+		const { data } = await axios.get(
+			'https://newsite.softorium.pro/admin-area/api/visitor/vacancy/'
+		);
+		return data;
+	}
+
+	async function fetchData() {
+		try {
+			const list = await getVacancyList();
+			setVacancy(list);
+			console.log(list);
+		} catch (e) {
+			console.error(e);
+		}
+	}
+
+	useEffect(() => {
+		fetchData();
+	}, []);
+
 	return (
 		<div className='App'>
 			<div className='head'>
