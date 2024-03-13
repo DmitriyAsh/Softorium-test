@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import './App.css';
 import axios from 'axios';
+import VacancyBlock from './VacancyBlock/VacancyBlock';
 
 function App() {
 	const [vacancy, setVacancy] = useState([]);
@@ -36,6 +37,14 @@ function App() {
 			<div className='team__requirements'>
 				в команду Softorium требуются:
 			</div>
+			{vacancy.map((i) => (
+				<VacancyBlock
+					key={i.id}
+					main_tech={JSON.stringify(i.main_technologies)}
+					more_tech={JSON.stringify(i.more_technologies)}
+					name={i.name}
+				/>
+			))}
 		</div>
 	);
 }
