@@ -46,6 +46,13 @@ const VacancyPage = () => {
 				</p>
 				<div className={cl.about_image}></div>
 			</div>
+			<div className={cl.tech_stack}>
+				<div className={cl.tech_stack_image}></div>
+				<div className={cl.tech_stack_names}>
+					<div className={cl.tech_min}></div>
+					<div className={cl.advantages}></div>
+				</div>
+			</div>
 		</div>
 	);
 };

@@ -1,6 +1,8 @@
 .head {
 	margin-top: 199px;
 	margin-left: 263px;
+	display: flex;
+	flex-direction: column;
 }
 
 .first__string {
@@ -26,7 +28,17 @@
 	-webkit-background-clip: text;
 }
 
+.about_block {
+	display: flex;
+	max-width: 1395px;
+	margin-top: 147px;
+	margin-left: 262px;
+	justify-content: space-between;
+}
+
 .about_text {
+	padding-top: 128px;
+	max-width: 569px;
 	font-size: 18px;
 	font-family: "Inter", sans-serif;
 	font-optical-sizing: auto;
@@ -38,6 +50,12 @@
 
 .about_image {
 	background-image: url(../../imgs/Rectangle\ 33.png);
-	max-width: 688px;
-	max-height: 401px;
+	width: 688px;
+	height: 401px;
+}
+
+.tech_stack_image {
+	background-image: url(../../imgs/Rectangle\ 33\ \(1\).png);
+	width: 688px;
+	height: 401px;
 }
