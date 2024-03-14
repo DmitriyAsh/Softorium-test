@@ -45,7 +45,9 @@ const VacancyBlock = ({ main_tech, more_tech, name }) => {
 					))}
 				</div>
 			</div>
-			<div className='more_ditails'></div>
+			<button className={cl.more_ditails}>
+				<div className={cl.more_div_inside}>Подробнее</div>
+			</button>
 		</div>
 	);
 };

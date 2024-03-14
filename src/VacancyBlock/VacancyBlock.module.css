@@ -3,10 +3,12 @@
 .vacancy_block {
 	margin-top: 60px;
 	margin-left: 262px;
-	width: 1396px;
+	max-width: 1396px;
 	height: 232px;
 	background-color: #FFFFFF;
 	border-radius: 90px;
+	display: flex;
+	justify-content: space-between;
 }
 
 .heading {
@@ -19,6 +21,7 @@
 	font-style: normal;
 	font-variation-settings:
 		"slnt" 0;
+	max-width: 1000px;
 }
 
 .main_stack,
@@ -33,6 +36,9 @@
 	padding-top: 22px;
 	padding-left: 60px;
 	display: flex;
+	flex-wrap: wrap;
+	max-width: 1000px;
+	gap: 10px 0px;
 }
 
 .names_main_stack,
@@ -42,4 +48,47 @@
 	border-top-left-radius: 12px;
 	border-bottom-right-radius: 12px;
 	color: #FFFFFF
+}
+
+.more_ditails {
+	width: 157px;
+	height: 147px;
+	margin-top: 31px;
+	margin-right: 75.35px;
+	border: none;
+	background-color: #FFFFFF;
+	cursor: pointer;
+	display: flex;
+}
+
+.more_div_inside {
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	border: 0.4px solid #0099CC;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	font-size: 16px;
+	font-family: "Inter", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-style: normal;
+	font-variation-settings:
+		"slnt" 0;
+	color: #0099CC;
+}
+
+.more_div_inside::after {
+	display: block;
+	content: '';
+	position: absolute;
+	top: 70%;
+	left: 75%;
+	width: 40%;
+	height: 40%;
+	background-image: url(../imgs/arrow_diagonal\ 2.png);
+	background-size: contain;
+	background-position: center;
 }
