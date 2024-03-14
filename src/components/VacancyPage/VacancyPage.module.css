@@ -1,0 +1,43 @@
+.head {
+	margin-top: 199px;
+	margin-left: 263px;
+}
+
+.first__string {
+	font-size: 72px;
+	font-family: "Inter", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-variation-settings:
+		"slnt" 0;
+}
+
+.second__string {
+	font-size: 48px;
+	font-family: "Inter", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-variation-settings:
+		"slnt" 0;
+	background: linear-gradient(100deg, #0099CC 0%, #FF6633 24%);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+}
+
+.about_text {
+	font-size: 18px;
+	font-family: "Inter", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-variation-settings:
+		"slnt" 0;
+}
+
+.about_image {
+	background-image: url(../../imgs/Rectangle\ 33.png);
+	max-width: 688px;
+	max-height: 401px;
+}
