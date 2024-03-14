@@ -1,4 +1,6 @@
+import { Routes, Route, Link } from 'react-router-dom';
 import cl from './VacancyBlock.module.css';
+import VacancyPage from '../VacancyPage/VacancyPage';
 
 const VacancyBlock = ({ main_tech, more_tech, name }) => {
 	more_tech = JSON.parse(more_tech).map((i) => i.name);
@@ -28,6 +30,7 @@ const VacancyBlock = ({ main_tech, more_tech, name }) => {
 						<div
 							className={cl.names_main_stack}
 							style={{ backgroundColor: colors[index] }}
+							key={index}
 						>
 							{i}
 						</div>
@@ -39,15 +42,16 @@ const VacancyBlock = ({ main_tech, more_tech, name }) => {
 						<div
 							className={cl.names_addition_stack}
 							style={{ backgroundColor: colors[index] }}
+							key={index}
 						>
 							{i}
 						</div>
 					))}
 				</div>
 			</div>
-			<button className={cl.more_ditails}>
+			<Link to='/VacancyPage' className={cl.more_ditails}>
 				<div className={cl.more_div_inside}>Подробнее</div>
-			</button>
+			</Link>
 		</div>
 	);
 };

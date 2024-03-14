@@ -59,6 +59,7 @@
 	background-color: #FFFFFF;
 	cursor: pointer;
 	display: flex;
+	text-decoration: none;
 }
 
 .more_div_inside {
@@ -88,7 +89,7 @@
 	left: 75%;
 	width: 40%;
 	height: 40%;
-	background-image: url(../imgs/arrow_diagonal\ 2.png);
+	background-image: url(../../imgs/arrow_diagonal\ 2.png);
 	background-size: contain;
 	background-position: center;
 }
