@@ -2,7 +2,7 @@ import { Routes, Route, Link } from 'react-router-dom';
 import cl from './VacancyBlock.module.css';
 import VacancyPage from '../VacancyPage/VacancyPage';
 
-const VacancyBlock = ({ main_tech, more_tech, name }) => {
+const VacancyBlock = ({ main_tech, more_tech, name, slug }) => {
 	more_tech = JSON.parse(more_tech).map((i) => i.name);
 	main_tech = JSON.parse(main_tech).map((i) => i.name);
 	const colors = [
@@ -49,7 +49,7 @@ const VacancyBlock = ({ main_tech, more_tech, name }) => {
 					))}
 				</div>
 			</div>
-			<Link to='/VacancyPage' className={cl.more_ditails}>
+			<Link to={`/VacancyPage/${slug}`} className={cl.more_ditails}>
 				<div className={cl.more_div_inside}>Подробнее</div>
 			</Link>
 		</div>

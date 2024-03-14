@@ -44,6 +44,7 @@ function MainPage() {
 					main_tech={JSON.stringify(i.main_technologies)}
 					more_tech={JSON.stringify(i.more_technologies)}
 					name={i.name}
+					slug={i.slug}
 				/>
 			))}
 		</div>
